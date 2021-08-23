@@ -1,8 +1,8 @@
 <template>
   <div class="icons">
-      <div v-for="item in places" :key="item.id" class="icon-item">
-        <img :src="item.url">
-        <p>{{ item.name }}</p>
+    <div v-for="item in places" :key="item.id" class="icon-item">
+      <img :src="item.url" />
+      <p>{{ item.name }}</p>
     </div>
   </div>
 </template>
@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style  scoped>
+.icons{
+  width: 100%;
+}
 .icon-item {
   width: 25%;
   height: 0;
@@ -52,10 +55,10 @@ export default {
   height: 1.1rem;
   display: block;
   margin: 0 auto;
-  padding-top: .1rem;
+  padding-top: 0.1rem;
 }
 .icon-item p {
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   color: #212121;
   font-size: 0.28rem;
   text-align: center;
